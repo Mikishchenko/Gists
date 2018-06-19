@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		25F9E9F020D8F5B60004DABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9E9EF20D8F5B60004DABC /* AppDelegate.swift */; };
-		25F9E9F220D8F5B60004DABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9E9F120D8F5B60004DABC /* ViewController.swift */; };
 		25F9E9F520D8F5B60004DABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F9E9F320D8F5B60004DABC /* Main.storyboard */; };
 		25F9E9F720D8F5B80004DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F9E9F620D8F5B80004DABC /* Assets.xcassets */; };
 		25F9E9FA20D8F5B80004DABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F9E9F820D8F5B80004DABC /* LaunchScreen.storyboard */; };
+		25F9EA0220D8F66F0004DABC /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0120D8F66F0004DABC /* ListTVC.swift */; };
+		25F9EA0420D8F6C90004DABC /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0320D8F6C90004DABC /* ListTVCell.swift */; };
+		25F9EA0620D8F73E0004DABC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */; };
+		25F9EA0820D8FB240004DABC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0720D8FB240004DABC /* ModelData.swift */; };
+		25F9EA0A20D900F70004DABC /* GistPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0920D900F70004DABC /* GistPublicData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25F9E9EC20D8F5B60004DABC /* Gists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F9E9EF20D8F5B60004DABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25F9E9F120D8F5B60004DABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25F9E9F420D8F5B60004DABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F9E9F620D8F5B80004DABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F9E9F920D8F5B80004DABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25F9E9FB20D8F5B90004DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25F9EA0120D8F66F0004DABC /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
+		25F9EA0320D8F6C90004DABC /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
+		25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		25F9EA0720D8FB240004DABC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		25F9EA0920D900F70004DABC /* GistPublicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistPublicData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				25F9E9EF20D8F5B60004DABC /* AppDelegate.swift */,
-				25F9E9F120D8F5B60004DABC /* ViewController.swift */,
+				25F9EA0720D8FB240004DABC /* ModelData.swift */,
+				25F9EA0920D900F70004DABC /* GistPublicData.swift */,
+				25F9EA0120D8F66F0004DABC /* ListTVC.swift */,
+				25F9EA0320D8F6C90004DABC /* ListTVCell.swift */,
+				25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */,
 				25F9E9F320D8F5B60004DABC /* Main.storyboard */,
 				25F9E9F620D8F5B80004DABC /* Assets.xcassets */,
 				25F9E9F820D8F5B80004DABC /* LaunchScreen.storyboard */,
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F9E9F220D8F5B60004DABC /* ViewController.swift in Sources */,
+				25F9EA0220D8F66F0004DABC /* ListTVC.swift in Sources */,
+				25F9EA0A20D900F70004DABC /* GistPublicData.swift in Sources */,
 				25F9E9F020D8F5B60004DABC /* AppDelegate.swift in Sources */,
+				25F9EA0820D8FB240004DABC /* ModelData.swift in Sources */,
+				25F9EA0420D8F6C90004DABC /* ListTVCell.swift in Sources */,
+				25F9EA0620D8F73E0004DABC /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ6BY872Y6;
 				INFOPLIST_FILE = Gists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NJ6BY872Y6;
 				INFOPLIST_FILE = Gists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
