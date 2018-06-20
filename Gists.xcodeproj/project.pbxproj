@@ -13,9 +13,12 @@
 		25F9E9FA20D8F5B80004DABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F9E9F820D8F5B80004DABC /* LaunchScreen.storyboard */; };
 		25F9EA0220D8F66F0004DABC /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0120D8F66F0004DABC /* ListTVC.swift */; };
 		25F9EA0420D8F6C90004DABC /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0320D8F6C90004DABC /* ListTVCell.swift */; };
-		25F9EA0620D8F73E0004DABC /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */; };
-		25F9EA0820D8FB240004DABC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0720D8FB240004DABC /* ModelData.swift */; };
+		25F9EA0620D8F73E0004DABC /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0520D8F73E0004DABC /* DetailsVC.swift */; };
+		25F9EA0820D8FB240004DABC /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0720D8FB240004DABC /* Gist.swift */; };
 		25F9EA0A20D900F70004DABC /* GistPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0920D900F70004DABC /* GistPublicData.swift */; };
+		25F9EA0C20D90AF80004DABC /* SingleGistData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0B20D90AF80004DABC /* SingleGistData.swift */; };
+		25F9EA0E20D963340004DABC /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0D20D963340004DABC /* Commit.swift */; };
+		25F9EA1020D9AC4E0004DABC /* CommitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9EA0F20D9AC4E0004DABC /* CommitTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +30,12 @@
 		25F9E9FB20D8F5B90004DABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F9EA0120D8F66F0004DABC /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		25F9EA0320D8F6C90004DABC /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
-		25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		25F9EA0720D8FB240004DABC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		25F9EA0520D8F73E0004DABC /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		25F9EA0720D8FB240004DABC /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
 		25F9EA0920D900F70004DABC /* GistPublicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistPublicData.swift; sourceTree = "<group>"; };
+		25F9EA0B20D90AF80004DABC /* SingleGistData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGistData.swift; sourceTree = "<group>"; };
+		25F9EA0D20D963340004DABC /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		25F9EA0F20D9AC4E0004DABC /* CommitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				25F9E9EF20D8F5B60004DABC /* AppDelegate.swift */,
-				25F9EA0720D8FB240004DABC /* ModelData.swift */,
+				25F9EA0720D8FB240004DABC /* Gist.swift */,
+				25F9EA0D20D963340004DABC /* Commit.swift */,
 				25F9EA0920D900F70004DABC /* GistPublicData.swift */,
+				25F9EA0B20D90AF80004DABC /* SingleGistData.swift */,
 				25F9EA0120D8F66F0004DABC /* ListTVC.swift */,
 				25F9EA0320D8F6C90004DABC /* ListTVCell.swift */,
-				25F9EA0520D8F73E0004DABC /* DetailsViewController.swift */,
+				25F9EA0520D8F73E0004DABC /* DetailsVC.swift */,
+				25F9EA0F20D9AC4E0004DABC /* CommitTVCell.swift */,
 				25F9E9F320D8F5B60004DABC /* Main.storyboard */,
 				25F9E9F620D8F5B80004DABC /* Assets.xcassets */,
 				25F9E9F820D8F5B80004DABC /* LaunchScreen.storyboard */,
@@ -147,12 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F9EA0E20D963340004DABC /* Commit.swift in Sources */,
 				25F9EA0220D8F66F0004DABC /* ListTVC.swift in Sources */,
 				25F9EA0A20D900F70004DABC /* GistPublicData.swift in Sources */,
 				25F9E9F020D8F5B60004DABC /* AppDelegate.swift in Sources */,
-				25F9EA0820D8FB240004DABC /* ModelData.swift in Sources */,
+				25F9EA0820D8FB240004DABC /* Gist.swift in Sources */,
 				25F9EA0420D8F6C90004DABC /* ListTVCell.swift in Sources */,
-				25F9EA0620D8F73E0004DABC /* DetailsViewController.swift in Sources */,
+				25F9EA0C20D90AF80004DABC /* SingleGistData.swift in Sources */,
+				25F9EA1020D9AC4E0004DABC /* CommitTVCell.swift in Sources */,
+				25F9EA0620D8F73E0004DABC /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

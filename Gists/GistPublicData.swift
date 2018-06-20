@@ -25,6 +25,7 @@ public func gistsRequest() {
          print(String(data: data, encoding: .utf8) ?? "No data")
          return
       }
+      print(json.count)
       for i in 0...29 {
          // извлечение из полученного ответа необходимых значений
          let owner = json[i]["owner"] as? [String: Any]
@@ -45,7 +46,8 @@ public func gistsRequest() {
          // получаем gistID
          let gistID = json[i]["id"] as? String
          print(gistID ?? "No gistID")
-         let gist = Gist(userAvatar: imageData, gistName: name, userName: login!)
+         print("-----")
+         let gist = Gist(userAvatar: imageData, gistName: name, userName: login ?? "No name", gistID: gistID!)
          // сохраняем в массив
          gistsList?.append(gist)
       }
